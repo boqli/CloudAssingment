@@ -1,0 +1,50 @@
+﻿@model Common.User
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<form action="/Users/Register" method="post">
+
+
+    <div>
+        <h4>User</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.creditCount)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.creditCount)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.FirstName)
+            </dt>
+            <dd class="col-sm-10">
+                <input type="text" value="@Model.FirstName" name="FirstName" />
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.LastName)
+            </dt>
+            <dd class="col-sm-10">
+                <input type="text" value="@Model.LastName" name="Last Name" />
+
+        </dl>
+    </div>
+
+
+
+    <input type="submit" value="Update Details" />
+</form>
+
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>

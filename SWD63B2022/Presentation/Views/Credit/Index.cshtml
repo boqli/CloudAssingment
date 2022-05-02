@@ -1,0 +1,64 @@
+﻿@model IEnumerable<Common.Credit>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Credits</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                10x Credits
+            </th>
+
+            <th>
+                20x Credits
+            </th>
+
+            <th>
+                30x Credits
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <a role="button" href="@Url.Action("Buy", "Credit")?credit=10" class="btn btn-success">@Html.DisplayFor(modelItem => item.credit10)</a>
+                </td>
+                <td>
+                    <a role="button" href="@Url.Action("Buy", "Credit")?credit=20" class="btn btn-success">@Html.DisplayFor(modelItem => item.credit20)</a>
+                </td>
+                <td>
+                    <a role="button" href="@Url.Action("Buy", "Credit")?credit=30" class="btn btn-success">@Html.DisplayFor(modelItem => item.credit30)</a>
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+        }
+    </tbody>
+    <form asp-action="Buy2">
+        <select name="credits">
+            @foreach (var item in Model)
+            {
+                <option value="10">10x Credits > @item.credit10 euro</option>
+                <option value="20">20x Credits > @item.credit20 euro</option>
+                <option value="30">30x Credits >  @item.credit30 euro</option>
+            }
+        </select>
+        <div>
+            <input type="submit" value="Buy" class="btn btn-primary" />
+        </div>
+    </form>
+
+
+</table>
+
+
+

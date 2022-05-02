@@ -1,0 +1,35 @@
+﻿@model Common.MenuItem
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Menu Items:</h1>
+
+
+<h4>New Menu Item:</h4>
+
+<form method="post"  >
+    <table>
+        <tr>
+            <td>Link:</td>
+            <td><input type="text" name="Link" /></td>
+        </tr>
+        <tr>
+            <td>Text:</td>
+            <td><input type="text" name="Text" /></td>
+        </tr>
+        <tr>
+            <td>Order:</td>
+            <td><input type="number" value="0" name="Order" /></td>
+        </tr>
+    </table>
+    <input type="submit" value="Add new menu item" />
+ </form>
+
+ 
+ 
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

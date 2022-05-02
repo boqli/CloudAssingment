@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentation", "Presentation\Presentation.csproj", "{E30894B9-8C6F-43CD-A13D-26282805EA2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{CDD5C81A-ADEC-4174-B441-F0323FC36715}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{E0F18212-9AAA-4F06-B10E-F402CCB706B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E30894B9-8C6F-43CD-A13D-26282805EA2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E30894B9-8C6F-43CD-A13D-26282805EA2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E30894B9-8C6F-43CD-A13D-26282805EA2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E30894B9-8C6F-43CD-A13D-26282805EA2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDD5C81A-ADEC-4174-B441-F0323FC36715}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDD5C81A-ADEC-4174-B441-F0323FC36715}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDD5C81A-ADEC-4174-B441-F0323FC36715}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDD5C81A-ADEC-4174-B441-F0323FC36715}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0F18212-9AAA-4F06-B10E-F402CCB706B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0F18212-9AAA-4F06-B10E-F402CCB706B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0F18212-9AAA-4F06-B10E-F402CCB706B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0F18212-9AAA-4F06-B10E-F402CCB706B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6DB8DCD7-3D25-465D-A377-6C408F368B2C}
+	EndGlobalSection
+EndGlobal
